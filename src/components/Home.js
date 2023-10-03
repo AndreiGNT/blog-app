@@ -3,14 +3,9 @@ import BlogList from "../reusable/BlogList";
 
 const Home = () => {
 
-    const [posts, setPosts] = useState([
-        {id: 1, title: 'First post on this blog!!', body: 'Some written text...etc', author: 'Andrei'},
-        {id: 2, title: 'Second Post', body: 'Some written text...etc', author: 'Elena'},
-        {id: 3, title: 'Third Post', body: 'Lili helped me a lot in my carrier', author: 'Lili'},
-        {id: 4, title: 'Forth Post', body: 'I love my girlfriend!!', author: 'Andrei'}
-    ]);
-
-    const [name, setName] = useState('Andrei')
+    const [posts, setPosts] = useState(null);
+    const [isPending, setIsPending] = useState(true)
+    const [error, setError] = useState(null) 
 
     const handleDelete = (id) => {
         const newPosts = posts.filter(post => post.id !== id);
@@ -18,14 +13,31 @@ const Home = () => {
     }
 
     useEffect(() => {
-        console.log('use Effect')
-    }, [name]);
+        setTimeout(() => {
+            fetch('http://localhost:8000/blogs')
+            .then(res => {
+                if (!res.ok){
+                    throw Error('Our server has a problem, come back later...');
+                }
+                return res.json();
+            })
+            .then(data => {
+                setPosts(data);
+                setIsPending(false);
+                setError(null);
+            })
+            .catch(err => {
+                setIsPending(false);
+                setError(err.message);
+            })
+        }, 500);
+    }, []);
 
     return (  
         <div className="home">
-            <BlogList posts={posts} title='All posts' handleDelete={handleDelete}/>
-            <button onClick={() => setName('Elena')}>change name</button>
-            <p>{name}</p>
+            { error && <div>{error}</div>}
+            {isPending && <div>Loading...</div>}
+            {posts && <BlogList posts={posts} handleDelete={handleDelete}/>}
         </div>
     );
 }

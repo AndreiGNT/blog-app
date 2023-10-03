@@ -1,0 +1,23 @@
+{
+    "blogs": [
+        {
+            "id": 1, 
+            "title": "First post on this blog!!", 
+            "body": "Some written text...etc", 
+            "author": "Andrei"
+        },
+        {
+            "id": 2, 
+            "title": "Second post", 
+            "body": "Some written text,  this blog using json file", 
+            "author": "Lili"
+        },
+        {
+            "id": 3, 
+            "title": "I have no idea", 
+            "body": "ce drq as putea sa mai scriu, iubita mea invata programare si se descurca de minune, eeeeee!!!", 
+            "author": "Elena"
+        }
+        
+    ]
+}
