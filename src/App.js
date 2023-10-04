@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Create from './components/Create';
 import ContactUs from './components/ContactUs';
 import BlogDetails from './components/BlogDetails';
+import NotFound from './components/NotFound';
 
 function App() {
 
@@ -28,6 +29,10 @@ function App() {
 
             <Route exact path="/posts/:id"> 
               <BlogDetails />
+            </Route>
+
+            <Route path="*"> 
+              <NotFound />
             </Route>
 
           </Switch>

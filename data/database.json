@@ -1,23 +1,34 @@
 {
-    "posts": [
-        {
-            "id": 1, 
-            "title": "First post on this blog!!", 
-            "body": "Some written text...etc", 
-            "author": "Andrei"
-        },
-        {
-            "id": 2, 
-            "title": "Second post", 
-            "body": "Some written text,  this blog using json file", 
-            "author": "Lili"
-        },
-        {
-            "id": 3, 
-            "title": "I have no idea", 
-            "body": "ce drq as putea sa mai scriu, iubita mea invata programare si se descurca de minune, eeeeee!!!", 
-            "author": "Elena"
-        }
-        
-    ]
+  "posts": [
+    {
+      "title": "First post on this blog!!",
+      "body": "Some written text...etc",
+      "author": "Andrei",
+      "id": 1
+    },
+    {
+      "title": "Second post",
+      "body": "Some written text,  this blog using json file",
+      "author": "Lili",
+      "id": 2
+    },
+    {
+      "title": "I have no idea",
+      "body": "ce drq as putea sa mai scriu, iubita mea invata programare si se descurca de minune, eeeeee!!!",
+      "author": "Elena",
+      "id": 3
+    },
+    {
+      "title": "Welcome",
+      "body": "Welcome to the new post actually created\n\n\n\n",
+      "author": "Lili",
+      "id": 4
+    },
+    {
+      "title": "Tests on the blog app!!",
+      "body": "Making some tests on this awesome app to see how it works and if everything is great.",
+      "author": "Andrei",
+      "id": 5
+    }
+  ]
 }

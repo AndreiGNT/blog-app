@@ -32,7 +32,7 @@ const useFetch = (url) => {
                 }
                 
             })
-        }, 500);
+        }, 300);
 
         return () => abortCont.abort();
     }, [url]);

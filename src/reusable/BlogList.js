@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
 const BlogList = ({posts}) => {
-
+    
     return ( 
-        <div className="blog-list">
+        <div className="blog-list"> 
             {posts.map((post) => (
                 <div className="blog-preview" key={post.id}>
                     <Link to={`/posts/${post.id}`}>
