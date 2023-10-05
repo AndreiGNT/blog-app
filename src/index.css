@@ -68,9 +68,14 @@
   background: #ad2626eb;
   color: #fff;
   border: 0;
+  margin-left: 5px;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.update-btn-color {
+  background: #3481f5eb;
 }
 
 /* create new post form */
