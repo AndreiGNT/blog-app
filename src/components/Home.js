@@ -8,7 +8,7 @@ const Home = () => {
         <div className="home">
             { error && <div>{error}</div>}
             {isPending && <div>Loading...</div>}
-            {posts && <BlogList posts={posts}/>}
+            {posts && <BlogList posts={posts.sort((a, b) => b.id - a.id)}/>}
         </div>
     );
 }
