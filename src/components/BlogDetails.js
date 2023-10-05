@@ -19,34 +19,6 @@ const BlogDetails = () => {
     });
   };
 
-  // const dataToUpdate = {
-  //     id: post.id,
-  //     title: post.title,
-  //     body: post.body,
-  //     author: post.author
-  // };
-
-  // const jsonString = JSON.stringify(dataToUpdate);
-
-  // const handleUpdate = () => {
-  //     fetch('http://localhost:8000/posts/' + post.id, {
-  //       method: 'PUT',
-  //       headers: {
-  //         'Content-Type': 'application/json'
-  //       },
-  //       body: jsonString
-  //     }).then(res => {
-  //         if (!res.ok) {
-  //           throw new Error(`HTTP error ${res.status}`);
-  //         }
-  //         return res.json();
-  //     }).then(updatedData => {
-  //         console.log('Data updated:', updatedData);
-  //     }).catch(error => {
-  //         console.error('Error updating data:', error);
-  //     });
-  // }
-
   return (
     <div className="blog-details">
       {isPending && <div>Loading...</div>}
