@@ -55,7 +55,7 @@ const Create = () => {
           <option value="Lili">Lili</option>
           <option value="Elena">Elena</option>
         </select>
-        <button>Add post</button>
+        <button>Update post</button>
       </form>
     </div>
   );
