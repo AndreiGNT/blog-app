@@ -1,12 +1,6 @@
 {
   "posts": [
     {
-      "title": "Welcome",
-      "body": "Welcome to the new post actually created\n\n\n\n",
-      "author": "Lili",
-      "id": 4
-    },
-    {
       "title": "Tests on the blog app!!",
       "body": "Making some tests on this awesome app to see how it works and if everything is great.",
       "author": "Andrei",
